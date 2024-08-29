@@ -1,1 +1,1 @@
-# subjetividad
+# tx2_analisis

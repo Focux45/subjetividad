@@ -3,14 +3,14 @@ from textblob import TextBlob
 from googletrans import Translator
 
 translator = Translator()
-st.title('Uso de textblob')
+st.title('Veamos la bipolaridad de tu frase 😂✌️')
 
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 with st.sidebar:
                st.subheader("Polaridad y Subjetividad")
                ("""
                 Polaridad: Indica si el sentimiento expresado en el texto es positivo, negativo o neutral. 
-                Su valor oscila entre -1 (muy negativo) y 1 (muy positivo), con 0 representando un sentimiento neutral.
+                Su valor oscila entre -1 (muy negativo) y 1 (muy positivo), con 0 representando un sentimiento neutral (evita que sea 0 porfa).
                 
                Subjetividad: Mide cuánto del contenido es subjetivo (opiniones, emociones, creencias) frente a objetivo
                (hechos). Va de 0 a 1, donde 0 es completamente objetivo y 1 es completamente subjetivo.
@@ -19,8 +19,8 @@ with st.sidebar:
                ) 
 
 
-with st.expander('Analizar Polaridad y Subjetividad en un texto'):
-    text1 = st.text_area('Escribe por favor: ')
+with st.expander('Analizar Polaridad y Subjetividad'):
+    text1 = st.text_area('copialo pues ')
     if text1:
 
         #translation = translator.translate(text1, src="es", dest="en")

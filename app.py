@@ -33,14 +33,14 @@ with st.expander('Analizar Polaridad y Subjetividad'):
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
-            st.write( 'Es un sentimiento Positivo 😊')
+            st.write( 'Es un sentimiento Positivo (gracias a Dios) 😊')
         elif x <= -0.5:
-            st.write( 'Es un sentimiento Negativo 😔')
+            st.write( 'Es un sentimiento Negativo (que es esa groseria) 😔')
         else:
-            st.write( 'Es un sentimiento Neutral 😐')
+            st.write( 'Es un sentimiento Neutral (copia algo mas chevere) 😐')
 
 with st.expander('Corrección en inglés'):
-       text2 = st.text_area('Escribe por favor: ',key='4')
+       text2 = st.text_area('Escribe en ingles: ',key='4')
        if text2:
           blob2=TextBlob(text2)
           st.write((blob2.correct())) 

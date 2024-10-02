@@ -20,7 +20,7 @@ with st.sidebar:
 
 
 with st.expander('Analizar Polaridad y Subjetividad'):
-    text1 = st.text_area('copialo pues ')
+    text1 = st.text_area('copialo pues (en ingles, no funciona el espanish) ')
     if text1:
 
         #translation = translator.translate(text1, src="es", dest="en")
